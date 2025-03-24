@@ -32,6 +32,7 @@ jobs:
           echo "build-status=success" >> $GITHUB_OUTPUT
 
       - name: Deploy
+        id: deploy
         run: |
           echo "Deploying build artifacts"
           echo "url=https://www.google.com" >> $GITHUB_OUTPUT
